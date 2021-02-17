@@ -37,6 +37,7 @@ resource "aws_ecs_service" "grafana" {
   network_configuration {
     security_groups = [aws_security_group.grafana_ecs.id]
     subnets         = var.subnets
+    assign_public_ip = true
   }
 
   load_balancer {
