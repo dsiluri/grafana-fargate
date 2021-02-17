@@ -7,7 +7,7 @@
                 "secretOptions": null,
                 "options": {
                     "awslogs-group": "grafana",
-                    "awslogs-region": "us-east-1",
+                    "awslogs-region": "eu-west-1",
                     "awslogs-stream-prefix": "grafana"
                 }
             },
