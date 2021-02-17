@@ -62,7 +62,7 @@ variable "db_instance_type" {
 
 variable "image_url" {
   description = "the image url for the grafana image"
-  default     = "dsiluri/grafana:0.1"
+  default     = "936919021372.dkr.ecr.eu-west-1.amazonaws.com/grafana:7.4.1"
 }
 
 variable "nginx_image_url" {
