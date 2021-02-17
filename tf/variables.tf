@@ -1,5 +1,5 @@
 variable "region" {
-  default     = "us-east-1"
+  default     = "eu-west-1"
   description = "The primary AWS region"
 }
 
@@ -57,7 +57,7 @@ variable "db_subnet_ids" {
 
 variable "db_instance_type" {
   description = "the instance size for the Aurora database"
-  default     = "db.t2.small"
+  default     = "db.t3.small"
 }
 
 variable "image_url" {
