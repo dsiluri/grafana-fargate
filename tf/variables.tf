@@ -62,12 +62,12 @@ variable "db_instance_type" {
 
 variable "image_url" {
   description = "the image url for the grafana image"
-  default     = "ulikabbq/grafana:0.1"
+  default     = "dsiluri/grafana:0.1"
 }
 
 variable "nginx_image_url" {
   description = "the image url for the nginx sidecar image"
-  default     = "ulikabbq/nginx_grafana:0.1"
+  default     = "dsiluri/nginx_grafana:0.1"
 }
 
 variable "grafana_count" {
