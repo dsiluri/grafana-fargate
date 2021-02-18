@@ -40,11 +40,15 @@ data "aws_iam_policy_document" "grafana_ecs_task_execution_role" {
     effect = "Allow"
 
     actions = [
+      "ecr:GetAuthorizationToken",
+      "ecr:BatchCheckLayerAvailability",
+      "ecr:GetDownloadUrlForLayer",
+      "ecr:BatchGetImage",
       "logs:CreateLogStream",
-      "logs:PutLogEvents",
+      "logs:PutLogEvents"
     ]
 
-    resources = [aws_cloudwatch_log_group.grafana.arn]
+    resources = ["${aws_cloudwatch_log_group.grafana.arn}", "${aws_ecr_repository.grafana.arn}"]
   }
 }
 
